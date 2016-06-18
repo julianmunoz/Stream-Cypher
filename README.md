@@ -1,5 +1,5 @@
-# Stream-Cypher
-Implementation for Present Stream Cypher
+# Block-Cypher
+Implementation for Present Block Cypher
 
 Usage:
 
