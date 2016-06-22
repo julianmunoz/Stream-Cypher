@@ -37,6 +37,7 @@ class PresentCypherImplementation(object):
         file_handle_encrypted = open(file_name_encrypted, 'wb+')
 
         # The header isn't encrypted
+        self.header = bytearray(encrypted_data)[10] + bytearray(encrypted_data)[11] + bytearray(encrypted_data)[12] + bytearray(encrypted_data)[13]
         header = encrypted_data[0:self.header]
         file_handle.write(header)
 
